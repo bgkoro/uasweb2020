@@ -1,0 +1,154 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Yuk Jajan !</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/unnamed.jpg" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">home</a></li> |
+				<li><a href="rooms.html">daftar jajanan</a></li> |
+				<li><a href="reservation.html">kritik & saran</a></li> |
+				<li><a href="activities.html">berita</a></li> |
+				<li><a href="contact.html">kontak saya</a></li>
+				<div class="clear"></div>
+			</ul>
+			
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">hotel</a></li> 
+				<li><a href="rooms.html">rooms & suits</a></li> 
+				<li><a href="reservation.html">reservation</a></li> 
+				<li><a href="activities.html">activities</a></li> 
+				<li><a href="contact.html">contact</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="contact">				
+				<div class="contact_left">
+					
+      			<div class="company_address">
+				     	<h3>Informasi:</h3>
+						<p>Perum Suhada Permai Cluster A-1,</p>
+						<p>RT 02 / RW 27</p>
+						<p>Semarang</p>
+				   		<p>Phone: (024) 123 456 78</p>
+				 	 	<p>Email: putrabagaskoro46@gmail.com</p>
+				   		<p>Follow on: <a href="https://www.facebook.com/KoroBasuki">Facebook</a>, <a href="#">Twitter</a></p>
+				   </div>
+				</div>				
+				<div class="contact_right">
+				  <div class="contact-form">
+				  	<h3>Kontak Saya</h3>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span><label>NAME</label></span>
+						    	<span><input name="userName" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-MAIL</label></span>
+						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>MOBILE</label></span>
+						    	<span><input name="userPhone" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>SUBJECT</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="submit us"></span>
+						  </div>
+					    </form>
+				    </div>
+  				</div>		
+  				<div class="clear"></div>		
+		  </div>
+	</div>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>©bgkoro</a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="rooms.html">daftar jajanan</a></li>
+					<li><a href="reservation.html">kritik & saran</a></li>
+					<li><a href="contact.html">kontak saya</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons"> </div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>
